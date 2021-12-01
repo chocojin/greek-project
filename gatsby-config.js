@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "My Gatsby Site",
+    title: "Greek Myth Project",
   },
   plugins: [],
   pathPrefix: "/greek-project"
