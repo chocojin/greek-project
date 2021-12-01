@@ -3,10 +3,9 @@ import { Container } from "./Container";
 import styled, { keyframes } from "styled-components";
 
 export const Room = ({id, description, options, setRoomID}) => {
-    let listOptions = options.map(option => <li key={id + " " + option.id}>
-            <a href='#' onClick={() => setRoomID(option.room_id)}>
-                {option.description}
-            </a>
+    let listOptions = options.map(option => 
+        <li key={id + " " + option.id} onClick={() => setRoomID(option.room_id)}>
+            {option.description}
         </li>);
 
     return (
@@ -40,8 +39,12 @@ const topIn = keyframes`
 `
 
 const Options = styled.ul`
+    list-style-type: none;
+    padding: 0;
     li {
+        cursor: pointer;
         opacity: 0;
+        border: silver 1px solid;
         animation-name: ${topIn};
         animation-duration: 2s;
         animation-fill-mode: forwards;
