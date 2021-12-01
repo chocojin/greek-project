@@ -22,6 +22,11 @@
                     "id": 0,
                     "description": "Go to Troy",
                     "room_id": 2
+                },
+                {
+                    "id": 1,
+                    "description": "Go to Beginning",
+                    "room_id": 0
                 }
             ]
         },

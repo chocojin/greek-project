@@ -19,7 +19,8 @@
     "d3": "^7.1.1",
     "gatsby": "^4.2.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1"
+    "react-dom": "^17.0.1",
+    "styled-components": "^5.3.3"
   },
   "devDependencies": {
     "gh-pages": "^3.2.3"

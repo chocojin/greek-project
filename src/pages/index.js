@@ -1,5 +1,5 @@
 import * as React from "react";
-import * as d3 from "d3";
+import styled from "styled-components";
 import { Container } from "../components/Container";
 import { Room } from "../components/Room";
 import storyData from "../data/story_data.json";
@@ -12,14 +12,21 @@ const IndexPage = () => {
 
     let room = storyData.rooms.find(element => element.id === roomID);
     return (
-        <Container id='main' className='container'>
+        <>
+        <h1>Greek Myth Project (Prototype)</h1>
+        <Main id='main'>
             <Room 
+            id={room.id}
             description={room.description}
             options={room.options}
             setRoomID={setRoomID}
             />
-        </Container>
+        </Main>
+        </>
     )  
 }
 
+const Main = styled(Container)`
+    display: flex;
+`
 export default IndexPage
