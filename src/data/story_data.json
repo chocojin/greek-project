@@ -1,0 +1,41 @@
+{
+    "startID": 0,
+    "rooms": [
+        {
+            "id": 0,
+            "title": "Start Room",
+            "description": "Odysseus begins his journey",
+            "options": [
+                {
+                    "id": 0,
+                    "description": "Go to Ithaca",
+                    "room_id": 1
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "title": "Ithaca",
+            "description": "Odysseus has arrived in Ithaca",
+            "options": [
+                {
+                    "id": 0,
+                    "description": "Go to Troy",
+                    "room_id": 2
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Troy",
+            "description": "Odysseus has arrived in Troy",
+            "options": [
+                {
+                    "id": 0,
+                    "description": "Go to Ithaca",
+                    "room_id": 1
+                }
+            ]
+        }
+    ]
+}
