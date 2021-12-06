@@ -3,21 +3,20 @@ import { Container } from "./Container";
 import styled, { keyframes } from "styled-components";
 
 export const Room = ({id, description, options, setRoomID}) => {
-    let listOptions = options.map(option => 
-        <li key={id + " " + option.id} onClick={() => setRoomID(option.room_id)}>
+    let listOptions = options.map((option, index) => 
+        <button key={id + " " + option.id} onClick={() => setRoomID(option.room_id)} style={{animationDelay: 0.5 + index/10}}>
             {option.description}
-        </li>);
+        </button>
+        );
 
     return (
         <Container id='room'>
             <Description key={id} id='description'>
                 {description}
             </Description>
-            <Container id='options'>
-                <Options>
-                    {listOptions}
-                </Options>
-            </Container>
+            <Options id='options'>
+                {listOptions}
+            </Options>
         </Container>
     )
 }
@@ -38,22 +37,22 @@ const topIn = keyframes`
     100% { opacity: 1; transform: translateY(0px)}
 `
 
-const Options = styled.ul`
-    list-style-type: none;
-    padding: 0;
-    li {
+const Options = styled(Container)`
+    margin-top: 30px;
+    button {
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 0;
+        font: inherit;
         cursor: pointer;
+        outline: inherit;
+    }
+    button {
+        display: block;
         opacity: 0;
-        border: silver 1px solid;
         animation-name: ${topIn};
         animation-duration: 2s;
         animation-fill-mode: forwards;
-    }
-
-    li:nth-child(1) {
-        animation-delay: 1s
-    }
-    li:nth-child(2) {
-        animation-delay: 1.1s
     }
 `
