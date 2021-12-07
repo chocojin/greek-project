@@ -1,5 +1,6 @@
 import * as React from "react";
 import styled from "styled-components";
+import 'leaflet/dist/leaflet.css';
 import { Container } from "../components/Container";
 import { Map } from "../components/Map";
 import { Room } from "../components/Room";
@@ -7,17 +8,23 @@ import storyData from "../data/story_data.json";
 
 const IndexPage = () => {
     const [roomID, setRoomID] = React.useState(storyData.startID);
+    const [items, setItems] = React.useState(storyData.items);
     React.useEffect(() => {
-        console.log(roomID)
-    }, [roomID]);
+        console.log(roomID);
+        console.log(items);
+    }, [roomID, items]);
 
     let room = storyData.rooms.find(element => element.id === roomID);
     return (
         <Main id='main'>
-            <h1>Greek Myth Project (Prototype)</h1>
+            <h1>Hometown Myth Creation: The Odyssey CYOA</h1>
             <Game id='game'>
                 <Map />
-                <Room id={room.id} description={room.description} options={room.options} setRoomID={setRoomID}/>
+                <Room 
+                room={room}
+                items={items}
+                setRoomID={setRoomID}
+                setItems={setItems}/>
             </Game>
         </Main>
     )  
@@ -30,6 +37,6 @@ const Main = styled(Container)`
 `
 
 const Game = styled(Container)`
-
+    display: flex;
 `
 export default IndexPage

@@ -1,46 +1,391 @@
 {
     "startID": 0,
     "rooms": [
-        {
+      {
+        "id": 0,
+        "title": "Starting the adventure",
+        "description": "There are many a heroes in history but none so clever as Odysseus. Let us regale a tale about this great hero's travels home and the perilous journey he traversed, and this time you will act as him and lead his crew.",
+        "options": [
+          {
             "id": 0,
-            "title": "Start Room",
-            "description": "Odysseus begins his journey",
-            "options": [
-                {
-                    "id": 0,
-                    "description": "Go to Ithaca",
-                    "room_id": 1
-                }
-            ]
-        },
-        {
+            "description": "Start the adventure",
+            "room_id": 1
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "title": "Hello Odysseus, Goodbye Troy",
+        "description": "After a long and grueling war and heavy losses on both sides, the Trojan war has finally concluded, the Achaeans have prevailed with rewards plentiful.\n\nAll soldiers and men have started their journey home, one such man called Odysseus, namely you, is already making the long voyage home with his men, across the ocean to Ithaca.\n\nAlong the way, your crew spots the city of Ismarus belonging to the Cicones, an enemy of the Achaeans. Your crew wishes to raid the city and take its riches and women.\n\nYou too are wanting to raid it, believing the gods have blessed you and your exploits, but a part of you believing this is too prideful does not wish to take part, what shall you do?",
+        "options": [
+          {
+            "id": 0,
+            "description": "Raid Ismarus, what could go wrong?",
+            "room_id": 2,
+            "items": {
+              "Wine": 1
+            }
+          },
+          {
             "id": 1,
-            "title": "Ithaca",
-            "description": "Odysseus has arrived in Ithaca",
-            "options": [
-                {
-                    "id": 0,
-                    "description": "Go to Troy",
-                    "room_id": 2
-                },
-                {
-                    "id": 1,
-                    "description": "Go to Beginning",
-                    "room_id": 0
-                }
-            ]
-        },
-        {
+            "description": "Lets not raid, something is off.",
+            "room_id": 3
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Raid Ismarus, city of the Cicones",
+        "description": "You and your warriors are off to raid the city, and raid it you did. By nightfall you have completely conquered the city, looted its riches and women.\n\nHowever, the bit of apprehension earlier is slowing firing off warning signals in your brain, especially so when a priestess of Apollo, Maroni, that you had protected during the raid prophesized danger if you were to stay till morning. Recieving some wine from her, you go about warning your men to leave the city before morning comes, but they hear none of it believing themselves to be superior to all who dare challenge them. You can do nothing to convince them.\n\nYour fears are realized when morning comes and reinforcements called by the scream of the citizens arrive, and your men finally getting the message retreat to the ship, but not without losing some men on the way.\n\nWhile you sail away from the city, a great storm wracked with lightning, blows you off course for what seems like an eternity to parts of land unknown.",
+        "options": [
+          {
+            "id": 0,
+            "description": "Continue",
+            "room_id": 4
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Don't raid Ismarus",
+        "description": "Although it might seem your fears might have gotten the best of you, you decide to not raid the city and instead continue along the way to Ithaca. However, a rumbling beneath the ocean floor occurs with tremors that reach your ship and all of the sudden a massive wave appears.\n\nIt carries your men adn your ships to parts unknown, your journey has been diverted.",
+        "options": [
+          {
+            "id": 0,
+            "description": "Continue",
+            "room_id": 4
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "title": "The isle of the Lotus-eaters",
+        "description": "The strange phenomenon has subsided, and you find yourself on a strange, unknown land. On this land you meet the natives and while hostile to them at first, you find them to be a docile, looney sort of people and you dub them the Lotus-eaters as they seem to only consume the fruit of the lotuses found on the island.\n\nThe Lotus-eaters offer you the fruit of the lotus and while some of your crew readily accept and consume the fruit, some of your crew, including you, are apprehensive and are unsure whether to eat it, what will you do?",
+        "options": [
+          {
+            "id": 0,
+            "description": "Eat the fruit, the native might be loopy but what could possibly go wrong?",
+            "room_id": 5
+          },
+          {
+            "id": 1,
+            "description": "Don't eat the fruit (cowards only)",
+            "room_id": 6
+          },
+          {
             "id": 2,
-            "title": "Troy",
-            "description": "Odysseus has arrived in Troy",
-            "options": [
-                {
-                    "id": 0,
-                    "description": "Go to Ithaca",
-                    "room_id": 1
-                }
-            ]
-        }
-    ]
-}
+            "description": "Don't eat the fruit, but take some with you instead.",
+            "room_id": 6,
+            "items": {
+              "Lotus": 2
+            }
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "title": "Eat the fruit",
+        "description": "Words cannot describe how dumb this decision was and you speedily scarf the fruit down. As the fruit's effects take hold, you slowly start to forget everything about \n\nIth- Ithmaca? \nItharus? \nPepelope? \nWhatever those things are, they don't matter, all you want to do is consume that sweet, sweet fruit.\n\nDEAD END ",
+        "options": []
+      },
+      {
+        "id": 6,
+        "title": "Don't eat the fruit",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "island choice",
+            "room_id": 8
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "title": "Take some fruit and leave",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "island choice",
+            "room_id": 8
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "title": "Island choice",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "go to island",
+            "room_id": 9
+          },
+          {
+            "id": 1,
+            "description": "dont go to island",
+            "room_id": 10
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "title": "Go to cyclops island",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "blidn cyclops use wine",
+            "room_id": 11,
+            "items": {
+              "Wine": -1
+            }
+          },
+          {
+            "id": 1,
+            "description": "use fruit",
+            "room_id": 12,
+            "items": {
+              "Lotus": -1
+            }
+          },
+          {
+            "id": 2,
+            "description": "not items",
+            "room_id": 13
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "title": "dont go to cuclops island",
+        "description": "Odysseus has arrived in Troy",
+        "options": []
+      },
+      {
+        "id": 11,
+        "title": "blind cyclops, use wine",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "aeolus",
+            "room_id": 14
+          }
+        ]
+      },
+      {
+        "id": 12,
+        "title": "use fruit to make cyclops",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "aeolus",
+            "room_id": 14
+          }
+        ]
+      },
+      {
+        "id": 13,
+        "title": "dead end, no items",
+        "description": "Odysseus has arrived in Troy",
+        "options": []
+      },
+      {
+        "id": 14,
+        "title": "recieve bag from aeolus",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "inhale bag",
+            "room_id": 15
+          },
+          {
+            "id": 1,
+            "description": "dont open bag",
+            "room_id": 16,
+            "items": {
+              "Lotus": -1,
+              "Wine": -1
+            }
+          },
+          {
+            "id": 2,
+            "description": "bag is opened",
+            "room_id": 17
+          }
+        ]
+      },
+      {
+        "id": 15,
+        "title": "Don't raid Ismarus",
+        "description": "Odysseus has arrived in Troy",
+        "options": []
+      },
+      {
+        "id": 16,
+        "title": "dont open bag, have fruit and wine",
+        "description": "Odysseus has arrived in Troy",
+        "options": []
+      },
+      {
+        "id": 17,
+        "title": "open the bag",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "giant land",
+            "room_id": 18
+          }
+        ]
+      },
+      {
+        "id": 18,
+        "title": "giant land",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "circe's island",
+            "room_id": 19
+          }
+        ]
+      },
+      {
+        "id": 19,
+        "title": "circes island",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "moly",
+            "room_id": 20
+          },
+          {
+            "id": 1,
+            "description": "no moly",
+            "room_id": 21
+          }
+        ]
+      },
+      {
+        "id": 20,
+        "title": "get moly",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "land of dead",
+            "room_id": 22
+          }
+        ]
+      },
+      {
+        "id": 21,
+        "title": "no moly",
+        "description": "Odysseus has arrived in Troy",
+        "options": []
+      },
+      {
+        "id": 22,
+        "title": "land of dead",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "Go to Ithaca",
+            "room_id": 23
+          }
+        ]
+      },
+      {
+        "id": 23,
+        "title": "sirens",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "plug ears",
+            "room_id": 24
+          },
+          {
+            "id": 1,
+            "description": "dont plug ears",
+            "room_id": 25
+          }
+        ]
+      },
+      {
+        "id": 24,
+        "title": "plug ears",
+        "description": "Odysseus has arrived in Troy",
+        "options": []
+      },
+      {
+        "id": 25,
+        "title": "dont plug ears",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "island of sun",
+            "room_id": 26
+          }
+        ]
+      },
+      {
+        "id": 26,
+        "title": "island of sun",
+        "description": "Odysseus has arrived in Troy",
+        "options": [
+          {
+            "id": 0,
+            "description": "use fruit",
+            "room_id": 27,
+            "items": {
+              "Lotus": -1
+            }
+          },
+          {
+            "id": 1,
+            "description": "use wine",
+            "room_id": 28,
+            "items": {
+              "Wine": -1
+            }
+          },
+          {
+            "id": 2,
+            "description": "calpyso island",
+            "room_id": 29
+          }
+        ]
+      },
+      {
+        "id": 27,
+        "title": "use fruit",
+        "description": "Odysseus has arrived in Troy",
+        "options": []
+      },
+      {
+        "id": 28,
+        "title": "use wine",
+        "description": "Odysseus has arrived in Troy",
+        "options": []
+      },
+      {
+        "id": 29,
+        "title": "calypso's island end",
+        "description": "Odysseus has arrived in Troy",
+        "options": []
+      }
+    ],
+    "items": {
+      "Wine": 0,
+      "Lotus": 0
+    }
+  }
