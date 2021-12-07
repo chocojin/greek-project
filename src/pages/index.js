@@ -1,6 +1,5 @@
 import * as React from "react";
 import styled from "styled-components";
-import 'leaflet/dist/leaflet.css';
 import { Container } from "../components/Container";
 import { Map } from "../components/Map";
 import { Room } from "../components/Room";
