@@ -18,12 +18,13 @@ const IndexPage = () => {
         <Main id='main'>
             <h1>Hometown Myth Creation: The Odyssey CYOA</h1>
             <Game id='game'>
-                <Map />
+                <Map center={[51.505, -0.09]}/>
                 <Room 
                 room={room}
                 items={items}
                 setRoomID={setRoomID}
-                setItems={setItems}/>
+                setItems={setItems}
+                />
             </Game>
         </Main>
     )  
