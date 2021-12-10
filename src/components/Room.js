@@ -4,24 +4,29 @@ import styled, { keyframes } from "styled-components";
 
 export const Room = ({room, items, setRoomID, setItems, setCenter}) => {
     console.log(room);
-    let listOptions = room.options.map((option, index) => 
+    let listOptions = room.options.map((option, index) => {
+        let disabled = disableButton(items, option.items);
+        return (
         <button
             key={room.id + " " + option.id} 
             onClick={() => onClick(option, items, setRoomID, setItems, setCenter)} 
-            style={{animationDelay: 0.5 + index/10}}
-            disabled={disableButton(items, option.items) ? true : null}
+            disabled={disabled ? true : null}
+            style={disabled ? {color: 'grey'} : null}
         >
             {option.description}
         </button>
-        );
+        )
+        });
 
     React.useEffect(() => {
-        setCenter([50, 50]);
+        if (typeof room.coordinates !== 'undefined') {
+            setCenter([38, 50]);
+        }
     }, [room, setCenter])
 
     return (
         <Container id='room' style={{paddingLeft: 20, paddingRight: 20}}>
-            <h3>{room.title}</h3>
+            <Title>{room.title}</Title>
             <Description key={room.id} id='description'>
                 <p>{room.description}</p>
             </Description>
@@ -66,6 +71,10 @@ const onClick = (option, items, setRoomID, setItems) => {
     setRoomID(option.room_id);
 }
 
+const Title = styled.h3`
+    margin-top: 0;
+`
+
 const fadeIn = keyframes`
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -78,12 +87,14 @@ const Description = styled(Container)`
     animation-fill-mode: forwards;
     white-space: pre-line;
 `
-const topIn = keyframes`
+const leftIn = keyframes`
     0% { opacity: 0; transform: translateX(50px) }
     100% { opacity: 1; transform: translateX(0px) }
 `
 
 const Options = styled(Container)`
+    display: inline-flex;
+    flex-direction: column;
     margin-top: 30px;
     button {
         background: none;
@@ -93,19 +104,32 @@ const Options = styled(Container)`
         font: inherit;
         cursor: pointer;
         outline: inherit;
+        box-sizing: border-box;
     }
     button {
-        display: block;
-        border: transparent 1px solid;
-        padding: 5px 0px 5px 0px;
-        margin-bottom: 2px;
+        min-width: 150px;
+        color: #3b6b8d;
+        text-align: left;
+        border: black 1px solid;
+        border-bottom-style: none;
+        padding: 5px;
         opacity: 0;
-        animation-name: ${topIn};
+        animation-name: ${fadeIn};
         animation-duration: 2s;
         animation-fill-mode: forwards;
-        transition-duration: 1s;
+        animation-delay: .5s;
+        transition-duration: .4s;
+    }
+    button:first-child {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    button:last-child {
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+        border-bottom-style: solid;
     }
     button:hover {
-        border: red 1px solid;
+        background-color: #f1f1f1
     }
 `

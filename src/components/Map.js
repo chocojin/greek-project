@@ -1,22 +1,21 @@
 import * as React from 'react'
 import 'leaflet/dist/leaflet.css';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
-import { Container } from './Container';
-import Leaflet from 'leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-
+import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
+import { Container } from './Container';
 
 export const Map = ({center, popupDescription = "Generic description"}) => {
-    if (typeof window !== 'undefined') {
-        const DefaultIcon = Leaflet.icon({
+    React.useEffect(() => {
+        const L = require('leaflet');
+        let DefaultIcon = L.icon({
             iconUrl: icon,
             shadowUrl: iconShadow
         });
         
-        Leaflet.Marker.prototype.options.icon = DefaultIcon;
-    }
-    
+        L.Marker.prototype.options.icon = DefaultIcon;
+    }, []);
+
     return (
         <Container id='map'>
             {(typeof window !== 'undefined') ? 
@@ -41,7 +40,7 @@ export const Map = ({center, popupDescription = "Generic description"}) => {
     )
 }
 
-export const ChangeView = ({center, zoom = 4}) => {
+const ChangeView = ({center, zoom = 4}) => {
     const map = useMap();
     map.flyTo(center, zoom);
     return null;

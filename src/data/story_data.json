@@ -32,7 +32,7 @@
         },
         {
           "id": 1,
-          "description": "Lets not raid, something is off.",
+          "description": "Let's not raid, something is off.",
           "room_id": 3
         }
       ]
@@ -130,7 +130,7 @@
     {
       "id": 8,
       "title": "Isle be the one to decide that",
-      "description": "As you sail through the murky waters in the night, you spot an island full of wild goats, you must be nearby the land of the cyclopses, a race of large imposing humanoid creatures with only a singular eye. You and your crew decide to rest and partake in the wild meat, taking a break from the unrelenting sea.\n\nThe land you currently are on is lush and fertile, filled with serene forests and untilled land, brimmed with natural harbors and fresh harbors. You wonder if this is a place that can be settled upon, so filled curiosity you ponder the idea of visiting the cyclopian neighbors, to see if they are of the civilized sort to allow this deed, or of hostile intentions.\n\nWith the gods on your side, there is no possible way this encounter will be anything less than fortunate, so do you take the opportunity?",
+      "description": "As you sail through the murky waters in the night, you spot an island full of wild goats, you must be nearby the land of the Cyclopses, an uncivilized race of large imposing humanoid creatures with only a singular eye. You and your crew decide to rest and partake in the wild meat, taking a break from the unrelenting sea.\n\nThe land you currently are on is lush and fertile, filled with serene forests and untilled land, brimmed with natural harbors and fresh harbors. You wonder if this is a place that can be settled upon, so filled curiosity you ponder the idea of visiting the Cyclopian neighbors, to see if they are of the civilized sort to allow this deed, or of hostile intentions.\n\nWith the gods on your side, there is no possible way this encounter will be anything less than fortunate, so do you take the opportunity?",
       "options": [
         {
           "id": 0,
@@ -147,11 +147,11 @@
     {
       "id": 9,
       "title": "Eye spy a Cyclops",
-      "description": "",
+      "description": "Feeling luck is on your side, you and your crew take some provisions (after some badgering) head into the Cyclops's lair. However, when you enter it seems that the resident is not there at the moment, probably out sheparding his flock, so your crew decides to help themselves to the Cyclops's own provisions. Stocked with boatloads of cheese (10/10 flavor), the crew gorges upon the dairy while not forgetting to sacrifice some while you wait for your soon to be host to come back.\n\nAs Helios finishes pulling his chariot and Selene begins her route, the Cyclops appears, closes the entrance with a massive boulder, and like any good host does asks his guests (who totally didn't intrude upon his domain) who they are and how they came. You supplicant his questions with non answers, you yourself also not trusting him, and ask for his hospitality. In response the Cyclops politely helps himself to two of your crewmates.\n\nYou and your crewmates are wracked with fear, you could have never enivisioned youself in this situation, how could this behemoth of a monster (who is part of a race known to be uncivilized) kill your crewmates after you rudely barged into to his home, ate his food supply, and demanded hosptiality. 100% unbelievable that this could happen, truly.\n\nBut anyways, the situation is dire, although the Cyclops has fallen asleep, if your men attempt to slay the giant they have no way of moving the massive boulder blocking the entrance. It also a matter of time before the giant awakens and begins his feast again. Is there anything to get you out of this situations, perhaps an item or two?",
       "options": [
         {
           "id": 0,
-          "description": "Perhaps a bit of wine will do the trick?",
+          "description": "Perhaps a bit of Apollonian wine will do the trick?",
           "room_id": 11,
           "items": {
             "Wine": -1
@@ -159,7 +159,7 @@
         },
         {
           "id": 1,
-          "description": "Fruit is good for the body, possibly not the mind",
+          "description": "Lotus fruit is good for the body, not for Cyclopses though",
           "room_id": 12,
           "items": {
             "Lotus": -1
@@ -186,32 +186,32 @@
     },
     {
       "id": 11,
-      "title": "blind cyclops, use wine",
-      "description": "Odysseus has arrived in Troy",
+      "title": "Wine for you and, well, only you",
+      "description": "Remembering you brought the Apollonian wine with you, the one strong enough to knock out any being for quite a while, you quickly devise a plan to escape with your men. You all grab the club the Cyclops uses and begin fashioning it into a makeshift lance and, using the fire you made, char and harden the point. When the behemoth returns at dusk, you immediately spring into action and entice the arrogant giant into drinking the wine which he readily gulps down along with two more of your men. While doing so, he asks you one more question, your name. You wiley respond that you are outis, Nobody.\n\nOne second he's awake and the next he's out cold, at that moment you and your men hoist the lance above the giant head and plung into his only eye. He awakes screaming and clutches in his head in pain, seeking to find the perpetrators but only to find that darkness has enveloped the world. He cries for help and the other Cyclopses arrive after a moment, asking the Cyclops, who you now know to be Polyphemus, what happened. All he can do is say that \"Nobody is killing him, Nobody attacked me.\". That other Cyclopses scoff and laugh at his response, deeming him have lost his sanity and leave without recuperation.\n\nThe next morning when Polyphemus lets his herd out, you and your men slip away, underneath the bellies of the herd and quickly head back to the ship. The moment you begin to sail out you, using 100% of your brain, begin to taunt the giant of your escape and in return the Cyclops uses the sound of your voice to throw giant boulders to your location, but you barely dodge them. Then using 1000% of your brain, you taunt him by saying that not only that you aren't \"Nobody\", but in fact you are Odysseus. Hearing your name, he immediately begins to pray to his father, Poseidon, for your downfall or, at the very least, that you journey be long and arduous, full of troubles. With that, the god of the sea is now your enemy on your ocean journey.\n\nGood Job!",
       "options": [
         {
           "id": 0,
-          "description": "aeolus",
+          "description": "Continue",
           "room_id": 14
         }
       ]
     },
     {
       "id": 12,
-      "title": "use fruit to make cyclops",
-      "description": "Odysseus has arrived in Troy",
+      "title": "Lotus fruit is an essential part of a Cyclops's diet",
+      "description": "While thinking of a plan, you spot the Lotus fruit that you had brought with you and quickly devise a plan on the spot. When the Cyclops returns at dusk, you immediately entice him to eat the fruit, saying that it is more succulent than the nectar of the gods. Believing himself to be higher than the gods, the Cyclops readily devours the fruit along with two of your crewmates.\n\nThe moment he finishes eating the fruit, he immediately appears to be in a trance, a lotus fruit stupor. He immediately begins asking, pleading for more fruit, forgetting who holds the cards in this situation. You tell him that he can find more fruit beyond the cavern walls and across the ocean. He immediately rushes to open the cave and head out to finding more fruit, you and your men following behind. He quickly leaps into the ocean and begins swimming towards the direction you pointed him to and you and your men quickly regroup with your remaining crew and board your ships.\n\nYou begin to sail out while keeping the swimming Cyclops in your view, but eventually that swimming turns to flailing once the Cyclops grows tired and when you sense he is about to start drowning you begin to taunt him with laden insults. It seems your words have shaken him out of that stupor as hes begins to hurl back insults as his final words, with your only response being that it was you, Odysseus, that led to his downfall. With his final breath, he prays to his father, Poseidon, for your downfall or, at the very least, that you journey be long and arduous, full of troubles. With those last breaths, he sinks beneath the ocean, into his father domain.With that, the god of the sea is now your enemy on your ocean journey.\n\nGood Job!",
       "options": [
         {
           "id": 0,
-          "description": "aeolus",
+          "description": "Continue",
           "room_id": 14
         }
       ]
     },
     {
       "id": 13,
-      "title": "dead end, no items",
-      "description": "Odysseus has arrived in Troy",
+      "title": "Maybe some wine or fruit would have done the trick",
+      "description": "You try to come up with a plan to escape, but without any items that could leave the Cyclops vunerable you are out of any options. In one last final act of anger, you and your men attack the Cyclops and manage to kill the sleeping behemoth, without casualties. However, with no way out you and your men are now trapped with no way out and although you hear your men that stayed behind yelling about your status and trying to get in, theres nothing they can do and you are now trapped to a long, painful death of starvation or dehydration with what meager resources you or the giant had.\n\nMaybe checking the cave was a bad idea?\n\nDEAD END",
       "options": [
         {
           "id": 0,
@@ -222,17 +222,17 @@
     },
     {
       "id": 14,
-      "title": "recieve bag from aeolus",
-      "description": "Odysseus has arrived in Troy",
+      "title": "The wind will guide you",
+      "description": "Continuing out from your fateful encounter with the Cyclops, you head toward the Aeolian island where Aeolus, keeper of the winds, lived. There he granted you hospitality and allowed you to stay for however long you wanted which you gladly accepted. You stayed for over a month, granting Aeolus great joy while you regaled him with stories of your adventures. Eventually when it was time to leave, you told him you must go which he gladly obliged. He even made you an ox-hide sack to contain the roaring winds which would beset your journey and told you to keep them safe and secure so they would not interfere with your journey back to Ithaca. \n\nAnd interfere they did that, for more than a week the winds guided you back to Ithaca, you could even see the land in sight, however some of your men have been wanting to see what is in side your bag, and you bet some of them are plotting to open it, what will you do?",
       "options": [
         {
           "id": 0,
-          "description": "inhale bag",
+          "description": "Open the bag and inhale it (why?)",
           "room_id": 15
         },
         {
           "id": 1,
-          "description": "dont open bag",
+          "description": "Don't allow them to open the bag, you have some wine and fruit on you don't you?",
           "room_id": 16,
           "items": {
             "Lotus": -1,
@@ -241,15 +241,15 @@
         },
         {
           "id": 2,
-          "description": "bag is opened",
+          "description": "There's nothing you can do, the bag is opened",
           "room_id": 17
         }
       ]
     },
     {
       "id": 15,
-      "title": "inhale bag",
-      "description": "Odysseus has arrived in Troy",
+      "title": "That wasn't a great idea also KABOOOOOM",
+      "description": "Deciding to take the matters in your own hands, the only way possibly to prevent your men from openning the bag is for you yourself to open it and inhale it (????????????).\n\nWhile I could describe what happened to you after you inhaled the roaring winds, I won't. But I will say it was rather gruesome and your ship probably needs a deep cleaning after what happened.\n\nDEAD END",
       "options": [
         {
           "id": 0,
@@ -260,8 +260,8 @@
     },
     {
       "id": 16,
-      "title": "dont open bag, have fruit and wine",
-      "description": "Odysseus has arrived in Troy",
+      "title": "Fruit and wine make perfect distractions when they're basically drugs",
+      "description": "You decide to take matters in to your own hands and with the Apollonian wine and lotus fruit you've kept safe just in case, you sneak the combination into the next crew meal and just as you expected they all immediately pass out. By next morning, with the bag safe on your side, you reach Ithaca safe and sound!\n\nSecret Good End 2",
       "options": [
         {
           "id": 0,
@@ -272,32 +272,20 @@
     },
     {
       "id": 17,
-      "title": "open the bag",
-      "description": "Odysseus has arrived in Troy",
+      "title": "Curiosity kills your chances of going home, oops",
+      "description": "Although you noticed your crew being restless, you presume this to just being their excitement at finally arrived home. Unbeknownst to you, some of your crew have secretly taken the bag underneath your midst and just as you are about to reach land, they are unable to resist their curiosity any longer and the roaring winds immediately blast your ships back to the Aeolian island. You are dumbfounded at the stupidity of your crew, and you sadly walk to Aeolus's home and seek to ask for help again. Unfortunately he recognizes you to have earned the ire of gods and refuses to help anymore, sending you on your way without any wind to help. You must continue your journey unaided.",
       "options": [
         {
           "id": 0,
-          "description": "giant land",
+          "description": "Continue",
           "room_id": 18
         }
       ]
     },
     {
       "id": 18,
-      "title": "giant land",
-      "description": "Odysseus has arrived in Troy",
-      "options": [
-        {
-          "id": 0,
-          "description": "circe's island",
-          "room_id": 19
-        }
-      ]
-    },
-    {
-      "id": 19,
-      "title": "circes island",
-      "description": "Odysseus has arrived in Troy",
+      "title": "Island hopping",
+      "description": "With no winds to aid you in your journey, you men must tirelessly row",
       "options": [
         {
           "id": 0,
@@ -395,24 +383,16 @@
       "options": [
         {
           "id": 0,
-          "description": "use fruit",
+          "description": "use fruit wine",
           "room_id": 27,
           "items": {
             "Lotus": -1
           }
         },
         {
-          "id": 1,
-          "description": "use wine",
-          "room_id": 28,
-          "items": {
-            "Wine": -1
-          }
-        },
-        {
           "id": 2,
           "description": "calpyso island",
-          "room_id": 29
+          "room_id": 28
         }
       ]
     },
@@ -430,18 +410,6 @@
     },
     {
       "id": 28,
-      "title": "use wine",
-      "description": "Odysseus has arrived in Troy",
-      "options": [
-        {
-          "id": 0,
-          "description": "Restart",
-          "room_id": 0
-        }
-      ]
-    },
-    {
-      "id": 29,
       "title": "calypso's island end",
       "description": "Odysseus has arrived in Troy",
       "options": [
