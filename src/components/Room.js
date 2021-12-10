@@ -2,18 +2,22 @@ import * as React from "react";
 import { Container } from "./Container";
 import styled, { keyframes } from "styled-components";
 
-export const Room = ({room, items, setRoomID, setItems}) => {
-    console.log(room)
+export const Room = ({room, items, setRoomID, setItems, setCenter}) => {
+    console.log(room);
     let listOptions = room.options.map((option, index) => 
-        <button 
+        <button
             key={room.id + " " + option.id} 
-            onClick={() => onClick(option, items, setRoomID, setItems)} 
+            onClick={() => onClick(option, items, setRoomID, setItems, setCenter)} 
             style={{animationDelay: 0.5 + index/10}}
             disabled={disableButton(items, option.items) ? true : null}
         >
             {option.description}
         </button>
         );
+
+    React.useEffect(() => {
+        setCenter([50, 50]);
+    }, [room, setCenter])
 
     return (
         <Container id='room' style={{paddingLeft: 20, paddingRight: 20}}>
@@ -44,6 +48,16 @@ const disableButton = (items, optionItems) => {
 
 const onClick = (option, items, setRoomID, setItems) => {
     let newItems = {};
+    if (option.description === "Restart") {
+        for (const item of Object.keys(items)) {
+            newItems[item] = 0;
+        }
+
+        setItems(newItems);
+        setRoomID(option.room_id);
+        return;
+    }
+    
     for (const [item, value] of Object.entries(items)) {
         newItems[item] = value + (option.items !== undefined && option.items[item] !== undefined ? option.items[item] : 0);
     }

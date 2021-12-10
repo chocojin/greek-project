@@ -2,6 +2,6 @@ module.exports = {
   siteMetadata: {
     title: "Greek Myth Project",
   },
-  plugins: [],
+  plugins: [`gatsby-plugin-react-helmet`],
   pathPrefix: "/greek-project"
 };
